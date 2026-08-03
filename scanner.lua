@@ -77,8 +77,8 @@ local Theme = {
 	RowLift           = 0.35,
 	CapsLabels        = true,
 
-	Acrylic           = 0.10,
-	BlurSize          = 18,
+	Acrylic           = 0,
+	BlurSize          = 0,
 }
 UILib.Theme = Theme
 
