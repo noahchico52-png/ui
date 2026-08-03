@@ -1,19 +1,3 @@
---[[
-	UILib  |  single-file executor build
-
-	Paste and run. Borderless weight-based styling, live-retinting
-	themes, frosted backdrop, in-header search, named config
-	profiles, resizable and position-sticky panels.
-
-		local W = UILib.CreatePanel({ Title = "Menu", Tabs = { "Main" } })
-		UILib.CreateToggle(W.GetTab(1), { Label = "Thing", OnChanged = print })
-
-	Themes retint live, no rebuild:
-		UILib.SetTheme("Ice" | "Mono" | "Clay" | "Paper" | "Terminal")
-
-	RightControl shows/hides. UILib.Unload() tears everything down.
-]]
-
 if not game:IsLoaded() then game.Loaded:Wait() end
 
 local UILib = {}
@@ -3814,3 +3798,7 @@ UILib.image       = UILib.CreateImage
 UILib.video       = UILib.CreateVideo
 UILib.viewport    = UILib.CreateViewport
 UILib.draggable   = UILib.MakeDraggable
+
+-- ============================================================
+
+return UILib
